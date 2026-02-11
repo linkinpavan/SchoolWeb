@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greenwood Academy | Inspire, Learn, Lead</title>
+    <meta
+      name="description"
+      content="Greenwood Academy is a modern school focused on academic excellence, creativity, and holistic growth."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar" id="home">
+      <div class="container nav-wrap">
+        <a class="logo" href="#home" aria-label="Greenwood Academy home">
+          <span class="logo-mark">GA</span>
+          <span class="logo-text">Greenwood Academy</span>
+        </a>
+        <button id="menuToggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        <nav id="mainNav" class="nav-links">
+          <a href="#about">About</a>
+          <a href="#programs">Programs</a>
+          <a href="#campus">Campus</a>
+          <a href="#events">Events</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="tag">Admissions Open 2026</p>
+            <h1>Where Curiosity Meets Excellence</h1>
+            <p>
+              At Greenwood Academy, students thrive through innovative learning,
+              personalized mentoring, and vibrant extracurricular opportunities.
+            </p>
+            <div class="hero-actions">
+              <a href="#apply" class="btn btn-primary">Apply Now</a>
+              <a href="#about" class="btn btn-outline">Take a Tour</a>
+            </div>
+            <div class="stats">
+              <div><strong>1,500+</strong><span>Students</span></div>
+              <div><strong>98%</strong><span>Graduation Rate</span></div>
+              <div><strong>60+</strong><span>Clubs & Sports</span></div>
+            </div>
+          </div>
+          <aside class="notice-card" aria-label="Quick facts">
+            <h3>Upcoming Highlights</h3>
+            <ul>
+              <li>🎓 Scholarship test: 15 March</li>
+              <li>🏅 Inter-school sports week: 22 March</li>
+              <li>🎭 Annual cultural fest: 6 April</li>
+            </ul>
+            <a href="#events" class="text-link">View full calendar →</a>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container two-col">
+          <div>
+            <h2>About Our School</h2>
+            <p>
+              Founded in 1998, Greenwood Academy blends strong academics with
+              leadership training, digital literacy, and community service.
+              Every learner receives support to discover strengths and build
+              confidence.
+            </p>
+            <ul class="check-list">
+              <li>Smart classrooms and STEM labs</li>
+              <li>Individual growth plans for each student</li>
+              <li>Counseling and wellbeing support</li>
+              <li>Global exchange and language programs</li>
+            </ul>
+          </div>
+          <div class="feature-grid">
+            <article>
+              <h3>Academics</h3>
+              <p>Project-based learning with expert faculty.</p>
+            </article>
+            <article>
+              <h3>Arts</h3>
+              <p>Music, dance, theatre, and fine arts studios.</p>
+            </article>
+            <article>
+              <h3>Sports</h3>
+              <p>Professional coaching in 15+ sports disciplines.</p>
+            </article>
+            <article>
+              <h3>Technology</h3>
+              <p>AI, robotics, and coding from middle school.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="programs" class="section section-alt">
+        <div class="container">
+          <h2>Programs</h2>
+          <div class="program-grid">
+            <article>
+              <h3>Primary School</h3>
+              <p>Foundation in literacy, numeracy, and creative thinking.</p>
+            </article>
+            <article>
+              <h3>Middle School</h3>
+              <p>Inquiry-driven curriculum, coding, and life skills.</p>
+            </article>
+            <article>
+              <h3>Senior School</h3>
+              <p>Career pathways, research projects, and exam readiness.</p>
+            </article>
+            <article>
+              <h3>After School</h3>
+              <p>Clubs, olympiad coaching, and language certifications.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="campus" class="section">
+        <div class="container">
+          <h2>Campus Life</h2>
+          <div class="gallery">
+            <figure><span>Science Lab</span></figure>
+            <figure><span>Library</span></figure>
+            <figure><span>Sports Arena</span></figure>
+            <figure><span>Performing Arts Hall</span></figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="events" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Events Calendar</h2>
+            <select id="eventFilter" aria-label="Filter events by category">
+              <option value="all">All Categories</option>
+              <option value="academic">Academic</option>
+              <option value="sports">Sports</option>
+              <option value="cultural">Cultural</option>
+            </select>
+          </div>
+          <div id="eventList" class="event-list"></div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section">
+        <div class="container testimonial-wrap">
+          <h2>What Parents Say</h2>
+          <blockquote id="testimonialQuote">
+            “Greenwood has transformed my child into a confident learner. The
+            teachers are incredibly supportive.”
+          </blockquote>
+          <p id="testimonialAuthor">— Priya Mehta, Parent of Grade 8 student</p>
+          <div class="dots" id="testimonialDots" aria-label="Testimonial controls"></div>
+        </div>
+      </section>
+
+      <section id="faq" class="section section-alt">
+        <div class="container">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-list">
+            <details>
+              <summary>What curriculum does Greenwood follow?</summary>
+              <p>We follow a blended national + international best-practice framework.</p>
+            </details>
+            <details>
+              <summary>Do you offer transportation?</summary>
+              <p>Yes, GPS-enabled buses cover major city routes.</p>
+            </details>
+            <details>
+              <summary>How can I schedule a campus tour?</summary>
+              <p>Use the contact form below or call our admissions desk.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="apply" class="section">
+        <div class="container">
+          <h2>Quick Admission Enquiry</h2>
+          <form id="admissionForm" class="enquiry-form" novalidate>
+            <label>
+              Student Name
+              <input type="text" name="student" required />
+            </label>
+            <label>
+              Parent Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Grade Applying For
+              <select name="grade" required>
+                <option value="">Select Grade</option>
+                <option>Grade 1-5</option>
+                <option>Grade 6-8</option>
+                <option>Grade 9-10</option>
+                <option>Grade 11-12</option>
+              </select>
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Tell us more"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+            <p id="formMessage" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Greenwood Academy</h3>
+          <p>45 Knowledge Avenue, Learning City</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>📞 +1 (555) 012-3456</p>
+          <p>✉️ admissions@greenwood.academy</p>
+        </div>
+        <div>
+          <h4>Office Hours</h4>
+          <p>Mon - Fri: 8:00 AM - 4:00 PM</p>
+          <p>Sat: 9:00 AM - 1:00 PM</p>
+        </div>
+      </div>
+      <p class="copy">© <span id="year"></span> Greenwood Academy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
